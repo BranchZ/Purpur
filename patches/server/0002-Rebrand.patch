@@ -30,7 +30,7 @@ index 74ed02fa9296583977bb721014b10ff8b708b43c..c1280478ee4565003883df9607d4a8a0
      protected LineReader buildReader(LineReaderBuilder builder) {
          return super.buildReader(builder
 -                .appName("Paper")
-+                .appName("Purpur") // Purpur
++                .appName("Perplexed") // Purpur
                  .variable(LineReader.HISTORY_FILE, java.nio.file.Paths.get(".console_history"))
                  .completer(new ConsoleCommandCompleter(this.server))
          );
@@ -43,7 +43,7 @@ index 229c3b0f0c650b501f31147adaa17194af57fedd..f88cf526d272fe47b5a474c0b344b748
  
                      properties.setProperty("eula", "false");
 -                    properties.store(outputstream, "By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula).");  // Paper - fix lag; // Tuinity - Tacos are disgusting
-+                    properties.store(outputstream, "By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula).\nYou also agree that tacos are tasty, and the best food in the world.");  // Paper - fix lag; // Tuinity - Tacos are disgusting // Purpur - no they're not
++                    properties.store(outputstream, "By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula).\nYou also agree that SoulSand Perplexed build is better than Pupur server :P");  // Paper - fix lag; // Tuinity - Tacos are disgusting // Purpur - no they're not
                  } catch (Throwable throwable1) {
                      throwable = throwable1;
                      throw throwable1;
@@ -190,7 +190,7 @@ index bd7bccbea1a0a052ef7bd6ab299ae72336874911..5100460bab83cd75ac8dcdcc50ea663b
  
  public final class CraftServer implements Server {
 -    private final String serverName = "Tuinity"; // Paper // Tuinity
-+    private final String serverName = "Purpur"; // Paper // Tuinity // Purpur
++    private final String serverName = "Perplexed"; // Paper // Tuinity // Purpur
      private final String serverVersion;
      private final String bukkitVersion = Versioning.getBukkitVersion();
      private final Logger logger = Logger.getLogger("Minecraft");
